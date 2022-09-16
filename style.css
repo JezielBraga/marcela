@@ -1,44 +1,41 @@
 :root {
-    --diamet: 4vh
+    --shadow: 0 2px 5px #888;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    height: 100%
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#root {
+header {
+    height: 8vh;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+main {
+    flex: 1;
+    background-color: #efefef;
+    padding-top: 15px;
+}
+
+.visible {
+    min-height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 0 10px 15px;
+    box-shadow: var(--shadow);
+}
+
+footer {
+    height: 3vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #000;
 }
 
-#circle {
-    height: var(--diamet);
-    width: var(--diamet);
-    border: 3px solid;
-    border-color: #000;
-    border-top-color: #fff;
-    border-radius: 50%;
-
-    animation-name: rotate;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    box-shadow: 0px 3px 5px #8888;
-}
-
-@keyframes rotate {
-    from {
-        rotate: 0deg;
-    }
-
-    to {
-        rotate: 360deg;
-    }
+.textFooter {
+    color: #fff;
 }
