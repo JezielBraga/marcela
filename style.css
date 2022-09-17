@@ -69,15 +69,15 @@ main {
 
 @keyframes highlight {
     0% {
-        font-size: 15vw;
+        font-size: 5vw;
     }
 
     50% {
-        font-size: 15.3svw;
+        font-size: 5.3svw;
     }
 
     100% {
-        font-size: 15vw;
+        font-size: 5vw;
     }
 }
 
